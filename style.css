@@ -1,0 +1,913 @@
+/* CSS for all html pages */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1056px) {
+
+    /* Desktop - General and Home page */
+
+    body {
+        background-image: url("img/BackgroundE.jpg");
+        background-color: #fee1ce;
+    }
+    
+    h1 {
+        letter-spacing: 0.3em;
+        color: white;
+    }
+    
+    h2 {
+        font-size: 3em;
+        color: rgb(61, 7, 7);
+    }
+    
+    p {
+        color:rgb(61, 7, 7);
+        font-size: 1.2em;
+        padding-top: 1em;
+    }
+    
+    a {
+        text-decoration: none;
+        padding: 2em;
+        color: white;
+    }
+    
+    a:hover {
+        color: aquamarine;
+    }
+
+    .hyperlink {
+        color:rgb(61, 7, 7);
+        font-size: 1.2em;
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    .line {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+    }
+
+    .main-header{
+        width: 100vw;
+        height: 6em;
+        background-color: rgb(61, 7, 7);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.3em;
+    }
+
+    .container-index {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 7em;
+        padding-left: 7em;
+    }
+
+    .card-index {
+        border: 2px dashed rgb(61, 7, 7);
+        height: 400px;
+        width: 500px;
+        padding: 2em;
+        margin-right: 3em;
+    }
+
+    .profile-index{
+        height: 400px;
+        width: auto;
+        border: 2px solid rgba(61, 7, 7, 0.526);
+    }
+
+    /* Desktop - CV */
+
+    .cv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap:wrap; 
+        padding-top: 1em; 
+        border: 2px dashed rgb(61, 7, 7);
+        margin: 2em;
+    }
+
+    .workexperienceHeader, .educationHeader {
+        padding: 1em;
+        margin: 1em;
+        width: 45%;
+        height:fit-content;
+    }
+
+    .workexperienceHeader > h3, .educationHeader > h3 {
+        color: rgba(61, 7, 7);
+        font-size: 2em;
+        padding-left: 1.2em;
+        padding-bottom: 0.5em;
+    }
+
+    .companyname {
+        color: rgb(61, 7, 7);
+        list-style: none;    
+        font-size: 1.4em;
+        padding-top: 1em;
+    }
+
+    .companyplacetime {
+        color: rgb(61, 7, 7);
+        list-style: none;
+        font-size: 1em;    
+    }
+
+    .roleinfo {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        font-size: 0.8em;
+        font-style: italic;
+        padding: 1em 0em 1em 0em;
+    }
+
+    .assignmentcompany {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        font-size: 1.2em ;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .education {
+        color: rgba(61, 7, 7);
+        list-style: none; 
+        font-size: 1.4em;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .school {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .cv-img {
+        width: 80%;
+        max-width: 450px;
+        height: auto;
+        padding-top: 5em;
+        padding-left: 2.2em;
+    }
+
+    /* Desktop - Portfolio */
+
+    .button {
+        background-color: teal;
+        border: 3px solid black;
+        padding: 0.3em;
+        border-radius: 20px;
+        color: white;
+        font-size: 1.7em;
+        border: 0;
+        cursor: pointer;
+        transition: all 0.6s ease-out;
+    }
+
+    .button:hover {
+        background-color: lime;
+
+    }
+
+    .modal-overlay {
+        display: none;
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 20% auto;
+        width: 70%;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px rgba(0,0,0,0.17);
+    }
+
+    .modal-header > h2 {
+        margin: 0;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .modal-header {
+        background: rgb(61, 7, 7);
+        padding: 15px;
+        color: white;
+    }
+
+    .modal-body {
+        padding: 10px 20px;
+    } 
+
+    #closeBtn {
+        font-size: 30px;
+        color: #fff;
+        float: right;
+    }
+
+    #closeBtn:hover, #closBtn:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer; 
+    }
+    
+    .container-portfolio {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .project-card {
+        border: 2px dashed rgb(61, 7, 7);
+        padding: 1em 0 1.5em 0;
+        width: 60%;
+        min-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card > h2 {
+        color: rgb(61, 7, 7);
+        font-size: 1.7em;
+        margin: 10px;
+        text-align: center;
+    } 
+
+    .project-img {
+        margin-top: 40px;
+        width: 700px;
+        border: 2px solid rgba(61, 7, 7, 0.526);
+    } 
+
+    /* Desktop - Contact */
+
+    .container-contact {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 7em;
+        padding-left: 7em;
+        text-align: center;   
+    }
+
+    .card-contact {
+        border: 2px dashed rgb(61, 7, 7);
+        height: 400px;
+        width: 500px;
+        padding: 2em;
+        margin-right: 3em; 
+    }
+
+    fieldset {
+        border: medium none !important;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-submit {
+        width: 100%;
+        background-color: rgb(61, 7, 7);
+        color: white;
+    }
+
+    .contact-img {
+        height: 400px;
+        width: auto;
+        border: 2px dashed rgb(61, 7, 7);
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 700px) and (max-width: 1056px) {
+    
+    /* Tablet- General and Home page */
+
+    body {
+        background-image: url("img/BackgroundE.jpg");
+        background-color: #cccccc;
+    }
+    
+    h1 {
+        letter-spacing: 0.3em;
+        color: white;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+        color: rgb(61, 7, 7);
+    }
+    
+    p {
+        color:rgb(61, 7, 7);
+        font-size: 0.9em;
+        padding-top: 1em;
+    }
+    
+    a {
+        text-decoration: none;
+        padding: 2em;
+        color: white;
+    }
+    
+    a:hover {
+        color: aquamarine;
+    }
+
+    .hyperlink {
+        color:rgb(61, 7, 7);
+        font-size: 1.2em;
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    .line {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+    }
+
+    .main-header {
+        width: 100vw;
+        height: 8em;
+        background-color: rgb(61, 7, 7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    .container-index {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 8em;
+    }
+
+    .card-index {
+        border: 2px dashed rgb(61, 7, 7);
+        height: 350px;
+        width: 400px;
+        padding: 2em;
+        margin-right: 1em;
+    }
+
+    .profile-index {
+        height: 350px;
+        width: auto;
+        border: 2px solid rgba(61, 7, 7, 0.526);
+    }
+
+    /* Tablet - CV */
+
+    .cv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding-top: 1em; 
+        border: 2px dashed rgb(61, 7, 7);
+        margin: 2em;
+    }
+
+    .workexperienceHeader, .educationHeader {
+        padding: 1em;
+        margin: 1em;
+        width: 90%;
+        height:fit-content;
+    }
+
+    .workexperienceHeader > h3, .educationHeader > h3 {
+        color: rgba(61, 7, 7);
+        font-size: 2em;
+        padding-left: 1.2em;
+        padding-bottom: 0.5em;
+    }
+
+    .companyname {
+        color: rgb(61, 7, 7);
+        list-style: none;    
+        font-size: 1.4em;
+        padding-top: 1em;
+    }
+
+    .companyplacetime {
+        color: rgb(61, 7, 7);
+        list-style: none;
+        font-size: 1em;    
+    }
+
+    .roleinfo {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        font-size: 0.8em;
+        font-style: italic;
+        padding: 1em 0em 1em 0em;
+    }
+
+    .assignmentcompany {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        font-size: 1.2em ;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .education {
+        color: rgba(61, 7, 7);
+        list-style: none; 
+        font-size: 1.4em;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .school {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .cv-img {
+        width: 80%;
+        height: auto;
+        padding-top: 5em;
+        padding-left: 2.2em;
+    }
+
+
+    /* Tablet - Portfolio */
+    .button {
+        background-color: teal;
+        padding: 0.5em 0.5em;
+        border-radius: 20px;
+        color: white;
+        font-size: 1.5em;
+        border: 0;
+    }
+
+    .button:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .modal-overlay {
+        display: none;
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 20% auto;
+        width: 70%;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px rgba(0,0,0,0.17);
+    }
+
+    .modal-header > h2 {
+        margin: 0;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .modal-header {
+        background: rgb(61, 7, 7);
+        padding: 15px;
+        color: white;
+    }
+
+     .modal-body {
+        padding: 10px 20px;
+    } 
+
+    #closeBtn {
+        font-size: 30px;
+        color: #fff;
+        float: right;
+    }
+
+    #closeBtn:hover, #closBtn:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer; 
+    }
+    
+    .container-portfolio {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5em;
+    }
+
+    .project-card {
+        border: 2px dashed rgb(61, 7, 7);
+        padding: 2em;
+        width: 60%;
+        min-width: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card > h2 {
+        color: rgb(61, 7, 7);
+        font-size: 1.7em;
+        text-align: center;
+    } 
+
+    .project-img {
+        padding-top: 40px;
+        width: 600px;
+    } 
+
+    /* Tablet - Contact */
+
+    .container-contact {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 8em;
+        text-align: center;   
+    }
+
+    .card-contact {
+        border: 2px dashed rgb(61, 7, 7);
+        height: 400px;
+        width: 500px;
+        padding: 2em;
+        margin-right: 1em; 
+    }
+
+    fieldset {
+        border: medium none !important;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-submit {
+        width: 100%;
+        background-color: rgb(61, 7, 7);
+        color: white;
+    }
+
+    .contact-img {
+        height: 400px;
+        width: auto;
+        border: 2px dashed rgb(61, 7, 7);
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+    
+    /* Mobile- General and Home page */
+
+    body {
+        background-image: url("img/BackgroundE.jpg");
+        background-color: #cccccc;
+    }
+    
+    h1 {
+        letter-spacing: 0.1em;
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        color: rgb(61, 7, 7);
+    }
+    
+    p {
+        color:rgb(61, 7, 7);
+        font-size: 0.7em;
+        padding-top: 1em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        color: aquamarine;
+    }
+
+    .hyperlink {
+        color:rgb(61, 7, 7);
+        font-size: 1.2em;
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    .line {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+    }
+
+    .main-header {
+        width: 100vw;
+        height: 10em;
+        background-color:rgb(61, 7, 7);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.7em;
+    }
+
+    .main-header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1em;
+    }
+
+    .container-index {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2em;
+    }
+
+    .card-index {
+        border: 2px dashed rgb(61, 7, 7);
+        height: 250px;
+        width: 250px;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .profile-index{
+        height: auto;
+        width: 250px;
+        border: 2px solid rgba(61, 7, 7, 0.526);
+    }
+
+    /* Mobile - CV */
+
+    .cv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:95vw;
+        padding-top: 0.6em;
+        border: 2px dashed rgb(61, 7, 7);
+        margin: 1em;
+    }
+    .workexperienceHeader, .educationHeader {
+        padding: 0.5em;
+        margin: 0.5em;
+        width: 90%;
+        height:fit-content;
+    }
+
+    .workexperienceHeader > h3, .educationHeader > h3 {
+        color: rgba(61, 7, 7);
+        font-size: 1.5em;
+        padding-left: 1.2em;
+        padding-bottom: 0.5em;
+    }
+
+    .companyname {
+        color: rgb(61, 7, 7);
+        list-style: none;    
+        font-size: 1em;
+        padding-top: 1em;
+    }
+
+    .companyplacetime {
+        color: rgb(61, 7, 7);
+        list-style: none;
+        font-size: 0.8em;    
+    }
+
+    .roleinfo {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        font-size: 0.6em;
+        font-style: italic;
+        padding: 1em 0em 1em 0em;
+    }
+
+    .assignmentcompany {
+        color: rgb(61, 7, 7);
+        list-style: none;
+        font-size: 1em ;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .education {
+        color: rgba(61, 7, 7);
+        list-style: none; 
+        font-size: 1em;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .school {
+        color: rgba(61, 7, 7);
+        list-style: none;
+        font-size: 0.8em;
+        padding-top: 0.8em;
+        padding-left: 0.2em;
+    }
+
+    .cv-img {
+        width: 80%;
+        height: auto;
+        padding-top: 5em;
+        padding-left: 2.2em;
+    }
+
+
+    /* Mobile - Portfolio */
+
+    .button {
+        background-color: teal;
+        padding: 0.3em 0.3em;
+        border-radius: 20px;
+        color: white;
+        font-size: 1em;
+        border: 0;
+    }
+
+    .button:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .modal-overlay {
+        display: none;
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 20% auto;
+        width: 70%;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px rgba(0,0,0,0.17);
+    }
+
+    .modal-header > h2 {
+        margin: 0;
+        color: white;
+        font-size: 1em;
+    }
+
+    .modal-header {
+        background: rgb(61, 7, 7);
+        padding: 20px;
+        color: white;
+    }
+
+     .modal-body {
+        padding: 15px;
+    } 
+
+    #closeBtn {
+        font-size: 15px;
+        padding: 10px;
+        color: #fff;
+        float: right;
+    }
+
+    #closeBtn:hover, #closBtn:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer; 
+    }
+    
+    .container-portfolio {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        border: 2px dashed rgb(61, 7, 7);
+        margin-top: 6em;
+        padding: 2.5em;
+        width: 60%;
+        height: 300px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card > h2 {
+        color: rgb(61, 7, 7);
+        font-size: 1.7em;
+        text-align: center;
+    } 
+
+    .project-img {
+        padding-top: 40px;
+        width: 200px;
+    } 
+
+    /* Mobile - Contact */
+
+    .container-contact {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2em 0 2em 0;
+        text-align: center;   
+    }
+
+    .card-contact {
+        border: 2px dashed rgb(61, 7, 7);
+        height: 400px;
+        width: 300px;
+        padding: 2em;
+    }
+
+    fieldset {
+        border: medium none !important;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-submit {
+        width: 100%;
+        background-color: rgb(61, 7, 7);
+        color: white;
+    }
+
+    .contact-img {
+        height: auto;
+        width: 300px;
+        border: 2px dashed rgb(61, 7, 7);
+        margin: 2em 0 2em 0;
+    }
+}
+

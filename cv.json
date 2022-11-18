@@ -1,0 +1,65 @@
+{ 
+    "workExperience": [
+
+        {
+            "name" : "Equator Stockholm | Accountant",
+            "placetime" : "Stockholm | 2022",
+            "info" : "Responsible for the current recording: customer ledger, supplier ledger, expense management, involved in the closing work."
+        },
+    
+        {
+            "name" : "Åhnberg & partners | Accounting consultant",
+            "placetime" : "Stockholm | 2019 - 2021",
+            "info" : "Account manager, managed the current recording, tax and VAT declarations, reporting, prepared financial statements, contact with auditors and consultation in financial matters."
+        },
+    
+        {
+            "name" : "Brightby | Consultant",
+            "placetime" : "Stockholm | 2018 - 2019",
+            "roles" : [
+                {
+                    "rolecompany" : "Accounting coordinator, B-Reel Films",
+                    "info" : "Responsible for the current recording: customer ledger, supplier ledger, expense management, involved in the closing work. Administered the projects for the commercial film department."
+                },
+            
+                {
+                    "rolecompany" : "Treasury Officer, Ahlstrom-Munksjö",
+                    "info" : "As Treasury Officer in Group Treasury I worked with payments, bank reconciliations and financial statements. I was responsible for the parent company guarantees and involved in the work with the company's insurances."
+                }
+            ]
+        },
+
+        {
+            "name" : "Academic Work | Consultant",
+            "placetime" : "Stockholm | 2016 - 2018",
+            "roles" : [
+                {
+                    "rolecompany" : "Accountant, Riksbyggen",
+                    "info" : "Responsible for housing associations' accounting with a focus on financial statements and budgets."
+                },
+            
+                {
+                    "rolecompany" : "Accountant, SEB",
+                    "info" : "On behalf of customers, I have been responsible for their customer ledger and taken care of payments, refunds, reminders and debt collection processes."
+                }
+            ]
+        }
+    ],
+    "education" : [
+        {
+            "education" : "Frontend Development",
+            "school" : "Chas Academy | 2022 - present"
+        },
+    
+        {
+            "education" : "Degree of Bachelor of Science in Business Administration and Economics",
+            "school" : "Stockholm University | 2012 - 2016" 
+        },
+    
+        {
+            "education" : "Drama School",
+            "school" : "Calle Flygare TeaterSkola | 2009 - 2011"
+        }
+    ]
+
+}
